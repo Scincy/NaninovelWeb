@@ -4,11 +4,14 @@ sidebar: auto
 
 # API Reference
 
-Novel script actions API reference. Use the side bar to quickly navigate between available actions. 
+NaniNovel의 API레퍼런스 페이지입니다. 사이드바를 이용하여 빠르게 이동하실 수 있습니다. 
 
-~~Strikethrough~~ indicates a nameless parameter, and **bold** stands for required parameter; other parameters should be considered optional. Check out the [novel scripts guide](/guide/novel-scripts.md) in case you have no idea what's this all about.
+>~~밑줄친 부분은~~ 이름 없는 매개변수를 의미합니다.
+>**굵게** 표시된 부분은 필수적인 매개변수를 의미합니다.
+>그 외의 매개변수는 선택사항입니다.
+잘 모르시겠다면 [novel scripts guide](/guide/novel-scripts.md)을 참고해 주시길 바랍니다.
 
-This API reference is valid for [Naninovel v1.3.0-beta](https://github.com/Elringus/NaninovelWeb/releases).
+본 문서는 [Naninovel v1.3.0-beta](https://github.com/Elringus/NaninovelWeb/releases).를 기준으로 작성되었습니다.
 
 ## arrange
 
