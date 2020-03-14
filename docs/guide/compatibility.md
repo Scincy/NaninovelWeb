@@ -1,18 +1,30 @@
-# Requirements and Compatibility
+# Compatibility
+
+## Beta
+
+Naninovel is currently in a final stage of open beta: all the core features are implemented and the engine is already being used in multiple commercial projects, but there is still a probability of breaking changes prior to stable release.
 
 ## Unity Version
-~~Due to complex nature of the engine, only the latest [LTS (long-term support)]( https://unity3d.com/unity/qa/lts-releases) Unity version is officially supported. Newer versions from the TECH stream could still work, but it’s not recommended to use them in production, as it could take us a while to fix possible compatibility issues.~~
 
-At the moment, **Unity 2018.3** is the minimum supported version; when 2018.4 is released, we'll stick with the initial LTS plan.
+Minimum supported Unity version is **2019.3**; this won't change throughout Naninovel v1.x releases. Support for new releases from [TECH stream](https://blogs.unity3d.com/2018/04/09/new-plans-for-unity-releases-introducing-the-tech-and-long-term-support-lts-streams/) is added once they're out of beta.
 
-Be aware, that .NET 3.5 [scripting runtime](https://docs.unity3d.com/Manual/ScriptingRuntimeUpgrade.html) is not supported and is being deprecated by Unity. Make sure **.NET 4.x Equivalent** scripting runtime version is set in the player settings before importing the package. 
+It's recommended to stay on [2019 LTS stream](https://unity3d.com/unity/qa/lts-releases) (expected to release in spring 2020) to minimize production risks.
 
 ## Platforms
+
 All the engine features are implemented using cross-platform APIs and are expected to be compatible with all the platforms Unity can target. 
 
-The following platforms were tested and are guaranteed to work:
+The following platforms were tested for compatibility:
 * Standalone: PC, Mac, Linux
 * WebGL
 * iOS
 * Android
 * UWP (IL2CPP scripting backend only)
+
+## Render Pipelines
+
+Unity's [scriptable render pipelines](https://docs.unity3d.com/Manual/ScriptableRenderPipeline.html) (both URP and HDRP) are supported with some limitations and require additional setup; see [render pipelines guide](/guide/render-pipelines.md) for more information.
+
+## Managed Stripping
+
+"Medium" and "High" [managed bytecode stripping](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping) profiles are not supported. Either disable the stripping or use the "Low" profile (set by default).

@@ -26,7 +26,7 @@ pageClass: landing
     </div>
     <div class="feature">
         <h2>강력한 시각효과</h2>
-        <p><a href="https://unity3d.com" target="_blank" rel="noopener noreferrer">Unity game engine <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>을 이용하여 개발하므로 최신 GPU의 기능을 모두 소화할 수 있습니다. 당신만의 시각효과를 제작하거나 <a href="/guide/background-transition-effects.html">다양한 내장 효과를</a> 사용해 보십시오!</p>
+        <p><a href="https://unity3d.com" target="_blank" rel="noopener noreferrer">Unity game engine https://discord.gg/BfkNqem</a>을 이용하여 개발하므로 최신 GPU의 기능을 모두 소화할 수 있습니다. 당신만의 시각효과를 제작하거나 <a href="/guide/background-transition-effects.html">다양한 내장 효과를</a> 사용해 보십시오!</p>
     </div>
     <div class="feature">
         <h2>크로스 플랫폼</h2>

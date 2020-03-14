@@ -22,15 +22,18 @@ module.exports = {
                 items: [
                     {text: 'Twitter', link: 'https://twitter.com/naniengine'},
                     {text: 'Facebook', link: 'https://www.facebook.com/naniengine'},
+                    {text: 'Unity Forum', link: 'https://forum.unity.com/threads/601966'},
+                    {text: 'Discord', link: 'https://discord.gg/BfkNqem'}
                     // {text: 'VK', link: 'https://vk.com/naninovel'}
                 ]
             },
+            {text: 'FAQ', link: '/faq/'},
             {text: 'Guide', link: '/guide/'},
             {text: 'API Reference', link: '/api/'},
             {text: 'Support', link: '/support/'}
         ],
         sidebar: {
-            '/guide/': getGuideSidebar('Guide', 'Advanced')
+            '/guide/': getGuideSidebar('Guide', 'Advanced', 'Extensions')
         }
     },
     plugins: {
@@ -38,51 +41,63 @@ module.exports = {
     }
 };
 
-function getGuideSidebar (groupA, groupB) {
+function getGuideSidebar (groupA, groupB, groupC) {
     return [
         {
             title: groupA,
-            collapsable: false,
+            collapsable: true,
             children: [
                 '',
                 'compatibility',
                 'getting-started',
                 'configuration',
-                'novel-scripts',
+                'naninovel-scripts',
                 'text-printers',
                 'characters',
                 'backgrounds',
-                'background-transition-effects',
+                'transition-effects',
                 'special-effects',
-                'background-music',
-                'sound-effects',
+                'audio',
                 'voicing',
                 'movies',
                 'choices',
+                'user-interface',
                 'save-load-system',
                 'game-settings',
                 'input-processing',
-                'printer-backlog',
-                'text-skipping',
-                'auto-advance-text',
-                'ui-toggling',
-                'adaptive-ui-layout',
-                'ui-customization',
+                'unlockable-items',
+                'custom-variables',
+                'script-expressions',
                 'managed-text',
                 'localization',
-                'community-modding'
+                'resource-providers',
+                'community-modding',
+                'development-console'
             ]
         },
         {
             title: groupB,
-            collapsable: false,
+            collapsable: true,
             children: [
                 'engine-architecture',
                 'engine-services',
-                'custom-novel-actions',
+                'custom-commands',
                 'custom-actor-implementations',
-                'development-console',
-                'google-drive-integration'
+                'custom-actor-shader',
+                'state-management',
+                'integration-options',
+                'render-pipelines',
+                'custom-build-environment'
+            ]
+        },
+        {
+            title: groupC,
+            collapsable: true,
+            children: [
+                'playmaker',
+                'bolt',
+                'adventure-creator',
+                'unitask'
             ]
         }
     ]
